@@ -84,7 +84,7 @@ all blogs
         <hr />
 
         {% for blog in blogs.all %}
-        <a href="">
+        <a href="{% url 'detail' blog.id %}">
             <h3> {{ blog.title }} </h3>
         </a>
         {{ blog.pub_date_pretty }}
